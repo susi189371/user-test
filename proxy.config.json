@@ -1,0 +1,22 @@
+
+{
+    "/api/login": {
+      "target": "https://asia-east2-beautybell-dashboard.cloudfunctions.net/customerLogin",
+      "secure": false,
+      "logLevel": "debug",
+      "pathRewrite": {
+        "^/api/login": ""
+      },
+      "changeOrigin": true
+    },
+  "/api/getData": {
+    "target": "https://asia-east2-beautybell-dashboard.cloudfunctions.net/findArtisanList?page=1&limit=10",
+    "secure": false,
+    "logLevel": "debug",
+    "pathRewrite": {
+      "^/api/getData": ""
+    },
+    "changeOrigin": true
+  }
+}
+

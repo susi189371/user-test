@@ -1,0 +1,28 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <span>PT Adrena Teknologi Indonesia</span>
+        <span class="example-spacer"></span>
+        <mat-icon class="logout" aria-hidden="false" aria-label="Example heart icon" (click)="logout()">logout
+        </mat-icon>
+    </mat-toolbar-row>
+</mat-toolbar>
+
+<div *ngIf="!spinner">
+    <mat-spinner></mat-spinner>
+</div>
+
+<mat-list>
+    <mat-list-item *ngFor="let data of listUser">
+        <mat-card class="example-card">
+            <img mat-card-image src="{{data.image}}" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+                <h4 mat-line>{{data.name}}</h4>
+                <p mat-line> {{data.about}} </p>
+                <p mat-line> {{data.email}} </p>
+                <p mat-line> {{data.gender}} </p>
+            </mat-card-content>
+        </mat-card>
+    </mat-list-item>
+</mat-list>
+
+  

@@ -1,0 +1,44 @@
+::ng-deep .mat-card {
+  width: 250px;
+  height: 420px;
+}
+
+::ng-deep .mat-list-base .mat-list-item,
+.mat-list-base .mat-list-option {
+  display: inline-flex !important;
+  height: 48px;
+  -webkit-tap-highlight-color: transparent;
+  width: 320px !important;
+  padding: 0;
+}
+
+::ng-deep .mat-card-image {
+  height: 250px;
+}
+
+::ng-deep .mat-toolbar.mat-primary {
+  background: #212931;
+  color: #fff;
+}
+
+::ng-deep .logout {
+  padding: 0 14px;
+  cursor: pointer;
+}
+
+::ng-deep .example-spacer {
+  flex: 1 1 auto;
+}
+
+::ng-deep .mat-progress-spinner circle,
+.mat-spinner circle {
+  stroke: #212931;
+  margin: auto !important;
+}
+
+.mat-progress-spinner {
+  display: block;
+  position: relative;
+  margin: auto;
+  margin-top: 10%;
+}
